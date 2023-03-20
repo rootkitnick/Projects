@@ -1,0 +1,70 @@
+<!DOCTYPE hmtl>
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<div>
+  <h1 id="title">Survey Form</h1>
+</div>
+<body>
+  <div>
+  <p id="description">This is a description</p>
+  </div>
+  
+  <form id="survey-form">
+    <div>
+
+      <label id="name-label">Please enter your name: 
+        <input id="name" type="text" placeholder="John Smith" required/>
+      </label>
+
+      <label id="email-label">Please enter your email:
+        <input id="email" type="email" placeholder="john.smith@test.com" required />
+      </label>
+
+      <label id="number-label">Please enter a number: 
+        <input id="number" type="number" min="0" max="100" placeholder="0 - 100" required />
+      </label>
+    </div>
+
+    <div>
+      <label>Please make a selection: 
+        <select id="dropdown">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <p>Hello or Goodbye?</p>
+      <label>
+        <input
+          name="radio-select"
+          value="hello"
+          type="radio"
+        />Hello</label
+      >
+      <label>
+        <input
+          name="radio-select"
+          value="goodbye"
+          type="radio"
+        />Goodbye</label
+      >
+    </div>
+
+    <div>
+      <label><input type="checkbox" value="good" />Good</label>
+      <label><input type="checkbox" value="neutral" />Neutral</label>
+      <label><input type="checkbox" value="bad" />Bad</label>
+    </div>
+
+    <div>
+      <label id="comments">Comments<textarea></textarea></label>
+    </div>
+
+    <div>
+      <input id="submit" type="submit" />
+    </div>
+  </form>
+</body>
